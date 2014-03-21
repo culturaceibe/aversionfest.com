@@ -1,0 +1,29 @@
+{
+  "name": "aversionfest.com",
+  "description": "Web app for Aversion Fest, an automanaged independent underground music festival performed in Burela, Galicia, Spain on Easter Week from 2011",
+  "subdomain": "aversion",
+  "domains": [
+    "aversionfest.com",
+    "www.aversionfest.com",
+    "static.aversionfest.com"
+  ],
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "version": "0.0.0-32",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "node-static": "0.6.7",
+    "express": "^3.4.8"
+  },
+  "bundledDependencies": [
+    ".bin",
+    "node-static"
+  ],
+  "env": {
+    "npm_config_rebuild_bundle": false,
+    "npm_config_production": true
+  }
+}
